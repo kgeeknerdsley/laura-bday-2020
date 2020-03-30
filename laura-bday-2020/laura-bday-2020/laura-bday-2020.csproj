@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Location.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -85,6 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\control_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\control_background_green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\gates.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

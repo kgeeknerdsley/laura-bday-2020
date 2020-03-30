@@ -83,6 +83,16 @@ namespace laura_bday_2020.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gates {
+            get {
+                object obj = ResourceManager.GetObject("gates", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap window_background {
             get {
                 object obj = ResourceManager.GetObject("window_background", resourceCulture);
