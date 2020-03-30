@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace laura_bday_2020
 {
-	public partial class Form1 : Form
+	public partial class mainWindow : Form
 	{
-		public Form1()
+		public mainWindow()
 		{
 			InitializeComponent();
 		}

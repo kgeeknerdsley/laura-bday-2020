@@ -1,6 +1,6 @@
 ﻿namespace laura_bday_2020
 {
-	partial class Form1
+	partial class mainWindow
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,17 +28,16 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.parkImageBox = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
+			this.buttonBack = new System.Windows.Forms.Button();
+			this.buttonRight = new System.Windows.Forms.Button();
+			this.buttonLeft = new System.Windows.Forms.Button();
+			this.buttonForward = new System.Windows.Forms.Button();
 			this.objectivePanel = new System.Windows.Forms.Panel();
+			this.label2 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.parkImageBox)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.objectivePanel.SuspendLayout();
@@ -48,74 +47,85 @@
 			// parkImageBox
 			// 
 			this.parkImageBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.parkImageBox.InitialImage = null;
 			this.parkImageBox.Location = new System.Drawing.Point(12, 12);
 			this.parkImageBox.Name = "parkImageBox";
 			this.parkImageBox.Size = new System.Drawing.Size(1049, 431);
+			this.parkImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.parkImageBox.TabIndex = 0;
 			this.parkImageBox.TabStop = false;
 			// 
 			// panel1
 			// 
-			this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+			this.panel1.BackgroundImage = global::laura_bday_2020.Properties.Resources.control_background_green;
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel1.Controls.Add(this.button4);
-			this.panel1.Controls.Add(this.button3);
-			this.panel1.Controls.Add(this.button2);
-			this.panel1.Controls.Add(this.button1);
+			this.panel1.Controls.Add(this.buttonBack);
+			this.panel1.Controls.Add(this.buttonRight);
+			this.panel1.Controls.Add(this.buttonLeft);
+			this.panel1.Controls.Add(this.buttonForward);
 			this.panel1.Location = new System.Drawing.Point(760, 450);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(300, 250);
 			this.panel1.TabIndex = 1;
 			// 
-			// button4
+			// buttonBack
 			// 
-			this.button4.Location = new System.Drawing.Point(91, 183);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(120, 60);
-			this.button4.TabIndex = 3;
-			this.button4.Text = "button4";
-			this.button4.UseVisualStyleBackColor = true;
+			this.buttonBack.Location = new System.Drawing.Point(91, 165);
+			this.buttonBack.Name = "buttonBack";
+			this.buttonBack.Size = new System.Drawing.Size(120, 60);
+			this.buttonBack.TabIndex = 3;
+			this.buttonBack.Text = "Back";
+			this.buttonBack.UseVisualStyleBackColor = true;
 			// 
-			// button3
+			// buttonRight
 			// 
-			this.button3.Location = new System.Drawing.Point(173, 99);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(120, 60);
-			this.button3.TabIndex = 2;
-			this.button3.Text = "button3";
-			this.button3.UseVisualStyleBackColor = true;
+			this.buttonRight.Location = new System.Drawing.Point(148, 99);
+			this.buttonRight.Name = "buttonRight";
+			this.buttonRight.Size = new System.Drawing.Size(120, 60);
+			this.buttonRight.TabIndex = 2;
+			this.buttonRight.Text = "Right";
+			this.buttonRight.UseVisualStyleBackColor = true;
 			// 
-			// button2
+			// buttonLeft
 			// 
-			this.button2.Location = new System.Drawing.Point(3, 99);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(120, 60);
-			this.button2.TabIndex = 1;
-			this.button2.Text = "button2";
-			this.button2.UseVisualStyleBackColor = true;
+			this.buttonLeft.Location = new System.Drawing.Point(22, 99);
+			this.buttonLeft.Name = "buttonLeft";
+			this.buttonLeft.Size = new System.Drawing.Size(120, 60);
+			this.buttonLeft.TabIndex = 1;
+			this.buttonLeft.Text = "Left";
+			this.buttonLeft.UseVisualStyleBackColor = true;
 			// 
-			// button1
+			// buttonForward
 			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button1.Location = new System.Drawing.Point(91, 3);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(120, 60);
-			this.button1.TabIndex = 0;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
+			this.buttonForward.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.buttonForward.Location = new System.Drawing.Point(91, 33);
+			this.buttonForward.Name = "buttonForward";
+			this.buttonForward.Size = new System.Drawing.Size(120, 60);
+			this.buttonForward.TabIndex = 0;
+			this.buttonForward.Text = "Forward";
+			this.buttonForward.UseVisualStyleBackColor = true;
 			// 
 			// objectivePanel
 			// 
-			this.objectivePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("objectivePanel.BackgroundImage")));
+			this.objectivePanel.BackgroundImage = global::laura_bday_2020.Properties.Resources.control_background_green;
 			this.objectivePanel.Controls.Add(this.label2);
 			this.objectivePanel.Location = new System.Drawing.Point(13, 450);
 			this.objectivePanel.Name = "objectivePanel";
 			this.objectivePanel.Size = new System.Drawing.Size(300, 250);
 			this.objectivePanel.TabIndex = 2;
 			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(48, 112);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(201, 13);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "this will become three pictures eventuallyl";
+			// 
 			// panel3
 			// 
-			this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+			this.panel3.BackgroundImage = global::laura_bday_2020.Properties.Resources.control_background_green;
 			this.panel3.Controls.Add(this.label1);
 			this.panel3.Location = new System.Drawing.Point(333, 450);
 			this.panel3.Name = "panel3";
@@ -131,16 +141,7 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Wowee this here is some flavor text";
 			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(48, 112);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(201, 13);
-			this.label2.TabIndex = 0;
-			this.label2.Text = "this will become three pictures eventuallyl";
-			// 
-			// Form1
+			// mainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,7 +151,7 @@
 			this.Controls.Add(this.objectivePanel);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.parkImageBox);
-			this.Name = "Form1";
+			this.Name = "mainWindow";
 			this.Text = "Laura\'s Disney Tour";
 			((System.ComponentModel.ISupportInitialize)(this.parkImageBox)).EndInit();
 			this.panel1.ResumeLayout(false);
@@ -166,10 +167,10 @@
 
 		private System.Windows.Forms.PictureBox parkImageBox;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button buttonBack;
+		private System.Windows.Forms.Button buttonRight;
+		private System.Windows.Forms.Button buttonLeft;
+		private System.Windows.Forms.Button buttonForward;
 		private System.Windows.Forms.Panel objectivePanel;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Label label1;
