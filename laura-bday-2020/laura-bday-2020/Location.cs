@@ -64,6 +64,26 @@ namespace laura_bday_2020
 			this.back = backLoc;
 		}
 
+		public Location getForwardLocation()
+		{
+			return this.forward;
+		}
+
+		public Location getLeftLocation()
+		{
+			return this.left;
+		}
+
+		public Location getBackLocation()
+		{
+			return this.back;
+		}
+
+		public Location getRightLocation()
+		{
+			return this.right;
+		}
+
 		public String getName()
 		{
 			return this.name;

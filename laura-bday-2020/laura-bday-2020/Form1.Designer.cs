@@ -38,6 +38,8 @@
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.locationLabelFixed = new System.Windows.Forms.Label();
 			this.nameLabel = new System.Windows.Forms.Label();
+			this.descriptionLabelFixed = new System.Windows.Forms.Label();
+			this.flavorLabel = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.parkImageBox)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.panel3.SuspendLayout();
@@ -112,6 +114,7 @@
 			// objectivePanel
 			// 
 			this.objectivePanel.BackgroundImage = global::laura_bday_2020.Properties.Resources.control_background_green;
+			this.objectivePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.objectivePanel.Location = new System.Drawing.Point(13, 450);
 			this.objectivePanel.Name = "objectivePanel";
 			this.objectivePanel.Size = new System.Drawing.Size(300, 250);
@@ -120,6 +123,9 @@
 			// panel3
 			// 
 			this.panel3.BackgroundImage = global::laura_bday_2020.Properties.Resources.control_background_green;
+			this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel3.Controls.Add(this.flavorLabel);
+			this.panel3.Controls.Add(this.descriptionLabelFixed);
 			this.panel3.Controls.Add(this.nameLabel);
 			this.panel3.Controls.Add(this.locationLabelFixed);
 			this.panel3.Location = new System.Drawing.Point(333, 450);
@@ -134,18 +140,42 @@
 			this.locationLabelFixed.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.locationLabelFixed.Location = new System.Drawing.Point(12, 13);
 			this.locationLabelFixed.Name = "locationLabelFixed";
-			this.locationLabelFixed.Size = new System.Drawing.Size(162, 22);
+			this.locationLabelFixed.Size = new System.Drawing.Size(169, 22);
 			this.locationLabelFixed.TabIndex = 0;
-			this.locationLabelFixed.Text = "Location";
+			this.locationLabelFixed.Text = "Location:";
 			// 
 			// nameLabel
 			// 
 			this.nameLabel.AutoSize = true;
-			this.nameLabel.Location = new System.Drawing.Point(174, 39);
+			this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+			this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.nameLabel.Location = new System.Drawing.Point(171, 51);
 			this.nameLabel.Name = "nameLabel";
-			this.nameLabel.Size = new System.Drawing.Size(35, 13);
+			this.nameLabel.Size = new System.Drawing.Size(123, 24);
 			this.nameLabel.TabIndex = 1;
-			this.nameLabel.Text = "label1";
+			this.nameLabel.Text = "Default Name";
+			// 
+			// descriptionLabelFixed
+			// 
+			this.descriptionLabelFixed.AutoSize = true;
+			this.descriptionLabelFixed.BackColor = System.Drawing.Color.Transparent;
+			this.descriptionLabelFixed.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.descriptionLabelFixed.Location = new System.Drawing.Point(12, 101);
+			this.descriptionLabelFixed.Name = "descriptionLabelFixed";
+			this.descriptionLabelFixed.Size = new System.Drawing.Size(217, 22);
+			this.descriptionLabelFixed.TabIndex = 2;
+			this.descriptionLabelFixed.Text = "Description:";
+			// 
+			// flavorLabel
+			// 
+			this.flavorLabel.AutoSize = true;
+			this.flavorLabel.BackColor = System.Drawing.Color.Transparent;
+			this.flavorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.flavorLabel.Location = new System.Drawing.Point(128, 145);
+			this.flavorLabel.Name = "flavorLabel";
+			this.flavorLabel.Size = new System.Drawing.Size(86, 16);
+			this.flavorLabel.TabIndex = 3;
+			this.flavorLabel.Text = "Default flavor";
 			// 
 			// mainWindow
 			// 
@@ -179,6 +209,8 @@
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Label locationLabelFixed;
 		private System.Windows.Forms.Label nameLabel;
+		private System.Windows.Forms.Label descriptionLabelFixed;
+		private System.Windows.Forms.Label flavorLabel;
 	}
 }
 

@@ -24,6 +24,13 @@ namespace laura_bday_2020
 		public mainWindow()
 		{
 			InitializeComponent();
+			changeCurrentLocation(gatesLoc); //set the initial location
+
+			gatesLoc.linkForward(testLoc);
+
+			testLoc.linkBack(gatesLoc);
+
+			updateGUI(getCurrentLocation());
 		}
 
 		public void changeCurrentLocation(Location newLoc)
@@ -36,30 +43,64 @@ namespace laura_bday_2020
 			return currentLocation;
 		}
 
-		public void move(Location toMove)
+		//0 = forward, 1 = left, 2 = right, 3 = backward
+		public void move(int direction)
 		{
-			Location temp_loc = getCurrentLocation();
-			temp_loc.getFlavorText();
+			Location currentLoc = getCurrentLocation();
+			Location nextLoc = null;
+
+			switch (direction)
+			{
+				case 0:
+					nextLoc = currentLoc.getForwardLocation();
+					break;
+				case 1:
+					nextLoc = currentLoc.getLeftLocation();
+					break;
+				case 2:
+					nextLoc = currentLoc.getRightLocation();
+					break;
+				case 3:
+					nextLoc = currentLoc.getBackLocation();
+					break;
+			}
+
+			if(nextLoc == null)
+			{
+				MessageBox.Show("Can't go that way!");
+			} else
+			{
+				updateGUI(nextLoc);
+				changeCurrentLocation(nextLoc);
+			}
+		}
+
+		public void updateGUI(Location location)
+		{
+			nameLabel.Text = location.getName();
+			flavorLabel.Text = location.getFlavorText();
+			parkImageBox.Image = location.getImage();
+
 		}
 
 		private void buttonForward_Click(object sender, EventArgs e)
 		{
-
+			move(0);
 		}
 
 		private void buttonLeft_Click(object sender, EventArgs e)
 		{
-
+			move(1);
 		}
 
 		private void buttonRight_Click(object sender, EventArgs e)
 		{
-
+			move(2);
 		}
 
 		private void buttonBack_Click(object sender, EventArgs e)
 		{
-
+			move(3);
 		}
 	}
 }
