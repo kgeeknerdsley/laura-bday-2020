@@ -25,6 +25,34 @@ namespace laura_bday_2020
 		Location cityHall = new Location("City Hall", "Get a button, maybe leave a compliment? If you're really lucky they'll give you a $120 gift card.",
 			Properties.Resources.control_background, false);
 
+		Location operaHouse = new Location("Opera House", "",
+			Properties.Resources.noimage, false);
+
+		Location mainStreet = new Location("Main Street", "",
+			Properties.Resources.noimage, false);
+
+		Location circle = new Location("Walt Statue Hub", "",
+			Properties.Resources.noimage, false);
+
+		//TOMORROWLAND
+		Location tomorrowFront = new Location("Tomorrowland Entrance", "",
+			Properties.Resources.noimage, false);
+
+		Location tomorrowMid = new Location("Tomorrowland Mid", "",
+			Properties.Resources.noimage, false);
+
+		Location innoventions = new Location("Launch Bay", "",
+			Properties.Resources.noimage, false);
+
+		Location spaceMountain = new Location("Space Mountain", "",
+			Properties.Resources.noimage, false);
+
+		Location autopia = new Location("Autopia", "",
+			Properties.Resources.noimage, false);
+
+		Location subLagoon = new Location("Submarine Lagoon", "",
+			Properties.Resources.noimage, false);
+
 		private Location currentLocation;
 		public Stack<Location> locationHistory = new Stack<Location>();
 
@@ -33,9 +61,11 @@ namespace laura_bday_2020
 			InitializeComponent();
 			changeCurrentLocation(gatesLoc); //set the initial location
 
+			//main street and entrance links
 			gatesLoc.linkForward(entrancePlaza);
 
 			entrancePlaza.linkLeft(cityHall);
+			entrancePlaza.linkRight(operaHouse);
 
 			updateGUI(getCurrentLocation());
 			locationHistory.Push(gatesLoc); //this location should always be the bottom of stack. no empty!!
@@ -103,6 +133,33 @@ namespace laura_bday_2020
 			nameLabel.Text = location.getName();
 			flavorLabel.Text = location.getFlavorText();
 			parkImageBox.Image = location.getImage();
+
+			if(location.getLeftLocation() == null)
+			{
+				//set left button to x
+			} else
+			{
+				//set left button to arrow
+			}
+
+			if (location.getForwardLocation() == null)
+			{
+				//set forward button to x
+			}
+			else
+			{
+				//set forward button to arrow
+			}
+
+			if (location.getRightLocation() == null)
+			{
+				//set right button to x
+			}
+			else
+			{
+				//set right button to arrow
+			}
+
 
 		}
 

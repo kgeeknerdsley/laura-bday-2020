@@ -121,13 +121,19 @@
   <data name="control_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\control_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\gates.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="control_background_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\control_background_green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="window_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\window_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gates" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\gates.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="noimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\noimage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sym_no" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sym_no.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -36,10 +36,10 @@
 			this.buttonForward = new System.Windows.Forms.Button();
 			this.objectivePanel = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.flavorLabel = new System.Windows.Forms.TextBox();
 			this.descriptionLabelFixed = new System.Windows.Forms.Label();
 			this.nameLabel = new System.Windows.Forms.Label();
 			this.locationLabelFixed = new System.Windows.Forms.Label();
-			this.flavorLabel = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.parkImageBox)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.panel3.SuspendLayout();
@@ -48,7 +48,7 @@
 			// parkImageBox
 			// 
 			this.parkImageBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.parkImageBox.Image = global::laura_bday_2020.Properties.Resources.gates;
+			this.parkImageBox.Image = global::laura_bday_2020.Properties.Resources.noimage;
 			this.parkImageBox.InitialImage = null;
 			this.parkImageBox.Location = new System.Drawing.Point(12, 12);
 			this.parkImageBox.Name = "parkImageBox";
@@ -133,6 +133,19 @@
 			this.panel3.Size = new System.Drawing.Size(403, 250);
 			this.panel3.TabIndex = 3;
 			// 
+			// flavorLabel
+			// 
+			this.flavorLabel.BackColor = System.Drawing.SystemColors.Window;
+			this.flavorLabel.Cursor = System.Windows.Forms.Cursors.Default;
+			this.flavorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.flavorLabel.Location = new System.Drawing.Point(67, 126);
+			this.flavorLabel.Multiline = true;
+			this.flavorLabel.Name = "flavorLabel";
+			this.flavorLabel.ReadOnly = true;
+			this.flavorLabel.Size = new System.Drawing.Size(250, 100);
+			this.flavorLabel.TabIndex = 4;
+			this.flavorLabel.TabStop = false;
+			// 
 			// descriptionLabelFixed
 			// 
 			this.descriptionLabelFixed.AutoSize = true;
@@ -165,19 +178,6 @@
 			this.locationLabelFixed.Size = new System.Drawing.Size(169, 22);
 			this.locationLabelFixed.TabIndex = 0;
 			this.locationLabelFixed.Text = "Location:";
-			// 
-			// flavorLabel
-			// 
-			this.flavorLabel.BackColor = System.Drawing.SystemColors.Window;
-			this.flavorLabel.Cursor = System.Windows.Forms.Cursors.Default;
-			this.flavorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.flavorLabel.Location = new System.Drawing.Point(67, 126);
-			this.flavorLabel.Multiline = true;
-			this.flavorLabel.Name = "flavorLabel";
-			this.flavorLabel.ReadOnly = true;
-			this.flavorLabel.Size = new System.Drawing.Size(250, 100);
-			this.flavorLabel.TabIndex = 4;
-			this.flavorLabel.TabStop = false;
 			// 
 			// mainWindow
 			// 
