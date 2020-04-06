@@ -36,10 +36,10 @@
 			this.buttonForward = new System.Windows.Forms.Button();
 			this.objectivePanel = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.locationLabelFixed = new System.Windows.Forms.Label();
-			this.nameLabel = new System.Windows.Forms.Label();
 			this.descriptionLabelFixed = new System.Windows.Forms.Label();
-			this.flavorLabel = new System.Windows.Forms.Label();
+			this.nameLabel = new System.Windows.Forms.Label();
+			this.locationLabelFixed = new System.Windows.Forms.Label();
+			this.flavorLabel = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.parkImageBox)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.panel3.SuspendLayout();
@@ -133,28 +133,6 @@
 			this.panel3.Size = new System.Drawing.Size(403, 250);
 			this.panel3.TabIndex = 3;
 			// 
-			// locationLabelFixed
-			// 
-			this.locationLabelFixed.AutoSize = true;
-			this.locationLabelFixed.BackColor = System.Drawing.Color.Transparent;
-			this.locationLabelFixed.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.locationLabelFixed.Location = new System.Drawing.Point(12, 13);
-			this.locationLabelFixed.Name = "locationLabelFixed";
-			this.locationLabelFixed.Size = new System.Drawing.Size(169, 22);
-			this.locationLabelFixed.TabIndex = 0;
-			this.locationLabelFixed.Text = "Location:";
-			// 
-			// nameLabel
-			// 
-			this.nameLabel.AutoSize = true;
-			this.nameLabel.BackColor = System.Drawing.Color.Transparent;
-			this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.nameLabel.Location = new System.Drawing.Point(171, 51);
-			this.nameLabel.Name = "nameLabel";
-			this.nameLabel.Size = new System.Drawing.Size(123, 24);
-			this.nameLabel.TabIndex = 1;
-			this.nameLabel.Text = "Default Name";
-			// 
 			// descriptionLabelFixed
 			// 
 			this.descriptionLabelFixed.AutoSize = true;
@@ -166,16 +144,40 @@
 			this.descriptionLabelFixed.TabIndex = 2;
 			this.descriptionLabelFixed.Text = "Description:";
 			// 
+			// nameLabel
+			// 
+			this.nameLabel.AutoSize = true;
+			this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+			this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.nameLabel.Location = new System.Drawing.Point(126, 49);
+			this.nameLabel.Name = "nameLabel";
+			this.nameLabel.Size = new System.Drawing.Size(123, 24);
+			this.nameLabel.TabIndex = 1;
+			this.nameLabel.Text = "Default Name";
+			// 
+			// locationLabelFixed
+			// 
+			this.locationLabelFixed.AutoSize = true;
+			this.locationLabelFixed.BackColor = System.Drawing.Color.Transparent;
+			this.locationLabelFixed.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.locationLabelFixed.Location = new System.Drawing.Point(12, 13);
+			this.locationLabelFixed.Name = "locationLabelFixed";
+			this.locationLabelFixed.Size = new System.Drawing.Size(169, 22);
+			this.locationLabelFixed.TabIndex = 0;
+			this.locationLabelFixed.Text = "Location:";
+			// 
 			// flavorLabel
 			// 
-			this.flavorLabel.AutoSize = true;
-			this.flavorLabel.BackColor = System.Drawing.Color.Transparent;
-			this.flavorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.flavorLabel.Location = new System.Drawing.Point(128, 145);
+			this.flavorLabel.BackColor = System.Drawing.SystemColors.Window;
+			this.flavorLabel.Cursor = System.Windows.Forms.Cursors.Default;
+			this.flavorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.flavorLabel.Location = new System.Drawing.Point(67, 126);
+			this.flavorLabel.Multiline = true;
 			this.flavorLabel.Name = "flavorLabel";
-			this.flavorLabel.Size = new System.Drawing.Size(86, 16);
-			this.flavorLabel.TabIndex = 3;
-			this.flavorLabel.Text = "Default flavor";
+			this.flavorLabel.ReadOnly = true;
+			this.flavorLabel.Size = new System.Drawing.Size(250, 100);
+			this.flavorLabel.TabIndex = 4;
+			this.flavorLabel.TabStop = false;
 			// 
 			// mainWindow
 			// 
@@ -210,7 +212,7 @@
 		private System.Windows.Forms.Label locationLabelFixed;
 		private System.Windows.Forms.Label nameLabel;
 		private System.Windows.Forms.Label descriptionLabelFixed;
-		private System.Windows.Forms.Label flavorLabel;
+		private System.Windows.Forms.TextBox flavorLabel;
 	}
 }
 

@@ -19,18 +19,27 @@ namespace laura_bday_2020
 		Location testLoc = new Location("Test zone", "This is just for testing",
 			Properties.Resources.control_background, false);
 
+		Location entrancePlaza = new Location("Entrance Plaza", "Take your first photo of the day here! Don't stand here if you want Rise passes.",
+			Properties.Resources.control_background, false);
+
+		Location cityHall = new Location("City Hall", "Get a button, maybe leave a compliment? If you're really lucky they'll give you a $120 gift card.",
+			Properties.Resources.control_background, false);
+
 		private Location currentLocation;
+		public Stack<Location> locationHistory = new Stack<Location>();
 
 		public mainWindow()
 		{
 			InitializeComponent();
 			changeCurrentLocation(gatesLoc); //set the initial location
 
-			gatesLoc.linkForward(testLoc);
+			gatesLoc.linkForward(entrancePlaza);
 
-			testLoc.linkBack(gatesLoc);
+			entrancePlaza.linkLeft(cityHall);
 
 			updateGUI(getCurrentLocation());
+			locationHistory.Push(gatesLoc); //this location should always be the bottom of stack. no empty!!
+			//MessageBox.Show(locationHistory.Peek().ToString());
 		}
 
 		public void changeCurrentLocation(Location newLoc)
@@ -49,7 +58,7 @@ namespace laura_bday_2020
 			Location currentLoc = getCurrentLocation();
 			Location nextLoc = null;
 
-			switch (direction)
+			switch (direction) //get where you're going next in nextLoc
 			{
 				case 0:
 					nextLoc = currentLoc.getForwardLocation();
@@ -61,17 +70,31 @@ namespace laura_bday_2020
 					nextLoc = currentLoc.getRightLocation();
 					break;
 				case 3:
-					nextLoc = currentLoc.getBackLocation();
+					nextLoc = locationHistory.Pop(); //pop off the top of the stack for the most recent move
+
 					break;
 			}
 
-			if(nextLoc == null)
+			if(nextLoc == null) //if it's null, there's no path so go nowhere
 			{
 				MessageBox.Show("Can't go that way!");
-			} else
+			} else //valid path
 			{
-				updateGUI(nextLoc);
-				changeCurrentLocation(nextLoc);
+				if(direction != 3)
+				{
+					locationHistory.Push(getCurrentLocation()); //save where we just were
+				}
+
+				updateGUI(nextLoc); //change gui to the new location
+				changeCurrentLocation(nextLoc); //current location is now the new location
+
+				foreach (Location i in locationHistory)
+				{
+					Console.WriteLine("---------");
+					Console.WriteLine(i.getName());
+					Console.WriteLine("---------");
+					Console.WriteLine();
+				}
 			}
 		}
 
@@ -101,6 +124,12 @@ namespace laura_bday_2020
 		private void buttonBack_Click(object sender, EventArgs e)
 		{
 			move(3);
+
+			if (locationHistory.Count() == 0) //if we popped off the start location, put it back
+			{
+				locationHistory.Push(gatesLoc);
+				MessageBox.Show("Can't go that way!");
+			}
 		}
 	}
 }
