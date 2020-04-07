@@ -16,14 +16,11 @@ namespace laura_bday_2020
 		Location gatesLoc = new Location("Gates", "This is where the gates are wahoo",
 			Properties.Resources.gates, false);
 
-		Location testLoc = new Location("Test zone", "This is just for testing",
-			Properties.Resources.control_background, false);
-
 		Location entrancePlaza = new Location("Entrance Plaza", "Take your first photo of the day here! Don't stand here if you want Rise passes.",
 			Properties.Resources.control_background, false);
 
 		Location cityHall = new Location("City Hall", "Get a button, maybe leave a compliment? If you're really lucky they'll give you a $120 gift card.",
-			Properties.Resources.control_background, false);
+			Properties.Resources.noimage, false);
 
 		Location operaHouse = new Location("Opera House", "",
 			Properties.Resources.noimage, false);
@@ -69,6 +66,53 @@ namespace laura_bday_2020
 		Location mickeyHouse = new Location("Mickey's House", "",
 			Properties.Resources.noimage, false);
 
+		//FRONTIER/ADVENTURE
+		Location afSplit = new Location("Adventure/Frontier Split", "",
+			Properties.Resources.noimage, false);
+
+		Location tikiRoom = new Location("Tiki Room", "",
+			Properties.Resources.noimage, false);
+
+		Location indy = new Location("Indiana Jones", "",
+			Properties.Resources.noimage, false);
+
+		Location frontierland = new Location("Frontierland and Rancho Del Zocalo", "",
+			Properties.Resources.noimage, false);
+
+		Location bigThunder = new Location("Big Thunder Mountain Railroad", "",
+			Properties.Resources.noimage, false);
+
+		Location riverJunction = new Location("Rivers of America Approach", "",
+			Properties.Resources.noimage, false);
+
+		Location newOrleans = new Location("New Orleans Shops", "",
+			Properties.Resources.noimage, false);
+
+		Location hauntedMansion = new Location("Haunted Mansion", "",
+			Properties.Resources.noimage, false);
+
+		Location splashMountain = new Location("Splash Mountain", "",
+			Properties.Resources.noimage, false);
+
+		//galaxys edge
+		Location geFirstOrderEnter = new Location("Galaxy's Edge, First Order Entrance", "",
+			Properties.Resources.noimage, false);
+
+		Location geBazaarEnter = new Location("Galaxy's Edge, Bazaar Entrance", "",
+			Properties.Resources.noimage, false);
+
+		Location geRiseEntry = new Location("Galaxy's Edge, Rise Entrance", "",
+			Properties.Resources.noimage, false);
+
+		Location falcon = new Location("Smuggler's Run", "",
+			Properties.Resources.noimage, false);
+
+		Location bazaar = new Location("Batuu Bazaar", "",
+			Properties.Resources.noimage, false);
+
+		Location rise = new Location("Rise of the Resistance", "",
+			Properties.Resources.noimage, false);
+
 		private Location currentLocation;
 		public Stack<Location> locationHistory = new Stack<Location>();
 
@@ -82,6 +126,23 @@ namespace laura_bday_2020
 
 			entrancePlaza.linkLeft(cityHall);
 			entrancePlaza.linkRight(operaHouse);
+
+			cityHall.linkRight(mainStreet);
+			operaHouse.linkLeft(mainStreet);
+
+			mainStreet.linkForward(circle);
+
+			circle.linkLeft(afSplit);
+			circle.linkForward(castle);
+			circle.linkRight(tomorrowFront);
+
+			//tomorrowland links
+			tomorrowFront.linkForward(tomorrowMid);
+			tomorrowMid.linkForward(innoventions);
+
+			innoventions.linkLeft(subLagoon);
+			innoventions.linkForward(autopia);
+			innoventions.linkRight(spaceMountain);
 
 			locationHistory.Push(gatesLoc); //this location should always be the bottom of stack. no empty!!
 			updateGUI(getCurrentLocation()); 
