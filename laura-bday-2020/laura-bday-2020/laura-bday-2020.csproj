@@ -96,5 +96,20 @@
   <ItemGroup>
     <None Include="resources\noimage.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sym_no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\rightarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\leftarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\downarrow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

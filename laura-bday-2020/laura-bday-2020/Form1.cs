@@ -53,6 +53,22 @@ namespace laura_bday_2020
 		Location subLagoon = new Location("Submarine Lagoon", "",
 			Properties.Resources.noimage, false);
 
+		//FANTASYLAND/TOONTOWN
+		Location castle = new Location("Castle", "",
+			Properties.Resources.noimage, false);
+
+		Location matterhornWay = new Location("Matterhorn Alleyway", "",
+			Properties.Resources.noimage, false);
+
+		Location smallWorld = new Location("Small World", "",
+			Properties.Resources.noimage, false);
+
+		Location rogerRabbit = new Location("Roger Rabbit's Car Toon Spin", "",
+			Properties.Resources.noimage, false);
+
+		Location mickeyHouse = new Location("Mickey's House", "",
+			Properties.Resources.noimage, false);
+
 		private Location currentLocation;
 		public Stack<Location> locationHistory = new Stack<Location>();
 
@@ -67,9 +83,8 @@ namespace laura_bday_2020
 			entrancePlaza.linkLeft(cityHall);
 			entrancePlaza.linkRight(operaHouse);
 
-			updateGUI(getCurrentLocation());
 			locationHistory.Push(gatesLoc); //this location should always be the bottom of stack. no empty!!
-			//MessageBox.Show(locationHistory.Peek().ToString());
+			updateGUI(getCurrentLocation()); 
 		}
 
 		public void changeCurrentLocation(Location newLoc)
@@ -136,28 +151,37 @@ namespace laura_bday_2020
 
 			if(location.getLeftLocation() == null)
 			{
-				//set left button to x
+				buttonLeft.Image = Properties.Resources.sym_no;
 			} else
 			{
-				//set left button to arrow
+				buttonLeft.Image = Properties.Resources.leftarrow;
 			}
 
 			if (location.getForwardLocation() == null)
 			{
-				//set forward button to x
+				buttonForward.Image = Properties.Resources.sym_no;
 			}
 			else
 			{
-				//set forward button to arrow
+				buttonForward.Image = Properties.Resources.uparrow;
 			}
 
 			if (location.getRightLocation() == null)
 			{
-				//set right button to x
+				buttonRight.Image = Properties.Resources.sym_no;
 			}
 			else
 			{
-				//set right button to arrow
+				buttonRight.Image = Properties.Resources.rightarrow;
+			}
+
+			//note: will crash if stack empties. don't let it?
+			if(locationHistory.Peek() != gatesLoc) //if not the gates to go back to say no? not sure if good
+			{
+				buttonBack.Image = Properties.Resources.sym_no;
+			} else
+			{
+				buttonBack.Image = Properties.Resources.downarrow;
 			}
 
 
