@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainWindow));
 			this.parkImageBox = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.buttonBack = new System.Windows.Forms.Button();
@@ -49,7 +48,6 @@
 			// parkImageBox
 			// 
 			this.parkImageBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.parkImageBox.Image = ((System.Drawing.Image)(resources.GetObject("parkImageBox.Image")));
 			this.parkImageBox.InitialImage = null;
 			this.parkImageBox.Location = new System.Drawing.Point(12, 12);
 			this.parkImageBox.Name = "parkImageBox";

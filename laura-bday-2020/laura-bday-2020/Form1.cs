@@ -17,16 +17,16 @@ namespace laura_bday_2020
 			Properties.Resources.gates, false);
 
 		Location entrancePlaza = new Location("Entrance Plaza", "Take your first photo of the day here! Don't stand here if you want Rise passes.",
-			Properties.Resources.control_background, false);
+			Properties.Resources.entranceplaza, false);
 
 		Location cityHall = new Location("City Hall", "Get a button, maybe leave a compliment? If you're really lucky they'll give you a $120 gift card.",
-			Properties.Resources.noimage, false);
+			Properties.Resources.cityhall, false);
 
 		Location operaHouse = new Location("Opera House", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.operahouse, false);
 
 		Location mainStreet = new Location("Main Street", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.mainstreet, false);
 
 		Location circle = new Location("Walt Statue Hub", "",
 			Properties.Resources.noimage, false);
@@ -36,7 +36,7 @@ namespace laura_bday_2020
 			Properties.Resources.noimage, false);
 
 		Location tomorrowMid = new Location("Tomorrowland Mid", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.tomorrowlandmid, false);
 
 		Location innoventions = new Location("Launch Bay", "",
 			Properties.Resources.noimage, false);
@@ -57,7 +57,16 @@ namespace laura_bday_2020
 		Location matterhornWay = new Location("Matterhorn Alleyway", "",
 			Properties.Resources.noimage, false);
 
+		Location matterhorn = new Location("Matterhorn", "",
+			Properties.Resources.noimage, false);
+
 		Location smallWorld = new Location("Small World", "",
+			Properties.Resources.noimage, false);
+
+		Location fantasyland = new Location("Fantasyland", "",
+			Properties.Resources.fantasyland, false);
+
+		Location caseyJr = new Location("Casey Jr.", "",
 			Properties.Resources.noimage, false);
 
 		Location rogerRabbit = new Location("Roger Rabbit's Car Toon Spin", "",
@@ -73,11 +82,14 @@ namespace laura_bday_2020
 		Location tikiRoom = new Location("Tiki Room", "",
 			Properties.Resources.noimage, false);
 
+		Location adventurelandMid = new Location("Adventureland Mid", "",
+			Properties.Resources.adventureland, false);
+
 		Location indy = new Location("Indiana Jones", "",
 			Properties.Resources.noimage, false);
 
 		Location frontierland = new Location("Frontierland and Rancho Del Zocalo", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.frontierland, false);
 
 		Location bigThunder = new Location("Big Thunder Mountain Railroad", "",
 			Properties.Resources.noimage, false);
@@ -86,7 +98,7 @@ namespace laura_bday_2020
 			Properties.Resources.noimage, false);
 
 		Location newOrleans = new Location("New Orleans Shops", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.neworleans, false);
 
 		Location hauntedMansion = new Location("Haunted Mansion", "",
 			Properties.Resources.noimage, false);
@@ -94,12 +106,15 @@ namespace laura_bday_2020
 		Location splashMountain = new Location("Splash Mountain", "",
 			Properties.Resources.noimage, false);
 
+		Location hungryBear = new Location("Hungry Bear Junction", "",
+			Properties.Resources.hungrybear, false);
+
 		//galaxys edge
 		Location geFirstOrderEnter = new Location("Galaxy's Edge, First Order Entrance", "",
 			Properties.Resources.noimage, false);
 
 		Location geBazaarEnter = new Location("Galaxy's Edge, Bazaar Entrance", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.gebazaar, false);
 
 		Location geRiseEntry = new Location("Galaxy's Edge, Rise Entrance", "",
 			Properties.Resources.noimage, false);
@@ -120,32 +135,9 @@ namespace laura_bday_2020
 		{
 			InitializeComponent();
 			changeCurrentLocation(gatesLoc); //set the initial location
-
-			//main street and entrance links
-			gatesLoc.linkForward(entrancePlaza);
-
-			entrancePlaza.linkLeft(cityHall);
-			entrancePlaza.linkRight(operaHouse);
-
-			cityHall.linkRight(mainStreet);
-			operaHouse.linkLeft(mainStreet);
-
-			mainStreet.linkForward(circle);
-
-			circle.linkLeft(afSplit);
-			circle.linkForward(castle);
-			circle.linkRight(tomorrowFront);
-
-			//tomorrowland links
-			tomorrowFront.linkForward(tomorrowMid);
-			tomorrowMid.linkForward(innoventions);
-
-			innoventions.linkLeft(subLagoon);
-			innoventions.linkForward(autopia);
-			innoventions.linkRight(spaceMountain);
-
+			linkLocations(); //link all the locations together
 			locationHistory.Push(gatesLoc); //this location should always be the bottom of stack. no empty!!
-			updateGUI(getCurrentLocation()); 
+			updateGUI(getCurrentLocation()); //update window to be the first location
 		}
 
 		public void changeCurrentLocation(Location newLoc)
@@ -244,6 +236,93 @@ namespace laura_bday_2020
 			{
 				buttonBack.Image = Properties.Resources.downarrow;
 			}
+
+
+		}
+
+		public void linkLocations()
+		{
+			//main street and entrance links
+			gatesLoc.linkForward(entrancePlaza);
+
+			entrancePlaza.linkLeft(cityHall);
+			entrancePlaza.linkRight(operaHouse);
+
+			cityHall.linkRight(mainStreet);
+			operaHouse.linkLeft(mainStreet);
+
+			mainStreet.linkForward(circle);
+
+			circle.linkLeft(afSplit);
+			circle.linkForward(castle);
+			circle.linkRight(tomorrowFront);
+
+			//tomorrowland links
+			tomorrowFront.linkForward(tomorrowMid);
+			tomorrowMid.linkForward(innoventions);
+
+			innoventions.linkLeft(subLagoon);
+			innoventions.linkForward(autopia);
+			innoventions.linkRight(spaceMountain);
+
+			//fantasyland links
+			castle.linkForward(fantasyland);
+			castle.linkRight(matterhornWay);
+
+			fantasyland.linkLeft(geFirstOrderEnter);
+			fantasyland.linkForward(caseyJr);
+			fantasyland.linkRight(smallWorld);
+
+			matterhornWay.linkForward(smallWorld);
+			matterhornWay.linkRight(matterhorn);
+
+			matterhorn.linkLeft(matterhornWay);
+			matterhorn.linkRight(subLagoon);
+			subLagoon.linkLeft(matterhorn);
+			
+			smallWorld.linkForward(rogerRabbit);
+			smallWorld.linkLeft(fantasyland);
+
+			rogerRabbit.linkForward(mickeyHouse);
+
+			//adventureland/frontierland links
+			afSplit.linkLeft(tikiRoom);
+			afSplit.linkRight(frontierland);
+
+			tikiRoom.linkRight(adventurelandMid);
+
+			adventurelandMid.linkLeft(indy);
+			adventurelandMid.linkForward(riverJunction);
+
+			riverJunction.linkLeft(newOrleans);
+			riverJunction.linkForward(hauntedMansion);
+			riverJunction.linkRight(bigThunder);
+
+			frontierland.linkForward(bigThunder);
+
+			newOrleans.linkForward(hauntedMansion);
+
+			hauntedMansion.linkForward(hungryBear);
+
+			hungryBear.linkLeft(splashMountain);
+			hungryBear.linkRight(geRiseEntry);
+
+			//galaxy's edge links
+			geRiseEntry.linkForward(rise);
+			rise.linkRight(bazaar);
+
+			bazaar.linkLeft(rise);
+			bazaar.linkRight(falcon);
+
+			geFirstOrderEnter.linkForward(falcon);
+			geFirstOrderEnter.linkLeft(geBazaarEnter);
+			geFirstOrderEnter.linkRight(fantasyland);
+			falcon.linkLeft(bazaar);
+
+			bigThunder.linkRight(geBazaarEnter);
+			geBazaarEnter.linkForward(bazaar);
+			geBazaarEnter.linkRight(geFirstOrderEnter);
+
 
 
 		}

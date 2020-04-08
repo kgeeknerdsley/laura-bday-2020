@@ -111,5 +111,38 @@
   <ItemGroup>
     <None Include="resources\downarrow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cityhall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\operahouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\entranceplaza.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\adventureland.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\fantasyland.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\frontierland.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\gebazaar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\hungrybear.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\mainstreet.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\neworleans.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\tomorrowlandmid.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
