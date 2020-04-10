@@ -144,5 +144,62 @@
   <ItemGroup>
     <None Include="resources\tomorrowlandmid.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\launchbay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\spacemountain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sublagoon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\caseyjr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\castle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\matterhorn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smallworld.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\waltstatue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\autopia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\tomorrowlandenter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\rogerrabbit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\mickeyhouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\afsplit.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\bigthunder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\hauntedmansion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\indy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\riversjunction.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\splashmountain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\tikiroom.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,7 +12,7 @@ namespace laura_bday_2020
 {
 	public partial class mainWindow : Form
 	{
-		//starting point, gates of the park
+		//starting point, gates of the park 6
 		Location gatesLoc = new Location("Gates", "This is where the gates are wahoo",
 			Properties.Resources.gates, false);
 
@@ -29,87 +29,87 @@ namespace laura_bday_2020
 			Properties.Resources.mainstreet, false);
 
 		Location circle = new Location("Walt Statue Hub", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.waltstatue, false);
 
-		//TOMORROWLAND
+		//TOMORROWLAND 6
 		Location tomorrowFront = new Location("Tomorrowland Entrance", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.tomorrowlandenter, false);
 
 		Location tomorrowMid = new Location("Tomorrowland Mid", "",
 			Properties.Resources.tomorrowlandmid, false);
 
 		Location innoventions = new Location("Launch Bay", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.launchbay, false);
 
 		Location spaceMountain = new Location("Space Mountain", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.spacemountain, false);
 
 		Location autopia = new Location("Autopia", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.autopia, false);
 
 		Location subLagoon = new Location("Submarine Lagoon", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.sublagoon, false);
 
-		//FANTASYLAND/TOONTOWN
+		//FANTASYLAND/TOONTOWN 8 
 		Location castle = new Location("Castle", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.castle, false);
 
 		Location matterhornWay = new Location("Matterhorn Alleyway", "",
 			Properties.Resources.noimage, false);
 
 		Location matterhorn = new Location("Matterhorn", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.matterhorn, false);
 
 		Location smallWorld = new Location("Small World", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.smallworld, false);
 
 		Location fantasyland = new Location("Fantasyland", "",
 			Properties.Resources.fantasyland, false);
 
 		Location caseyJr = new Location("Casey Jr.", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.caseyjr, false);
 
 		Location rogerRabbit = new Location("Roger Rabbit's Car Toon Spin", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.rogerrabbit, false);
 
 		Location mickeyHouse = new Location("Mickey's House", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.mickeyhouse, false);
 
-		//FRONTIER/ADVENTURE
+		//FRONTIER/ADVENTURE 10
 		Location afSplit = new Location("Adventure/Frontier Split", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.afsplit, false);
 
 		Location tikiRoom = new Location("Tiki Room", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.tikiroom, false);
 
 		Location adventurelandMid = new Location("Adventureland Mid", "",
 			Properties.Resources.adventureland, false);
 
 		Location indy = new Location("Indiana Jones", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.indy, false);
 
 		Location frontierland = new Location("Frontierland and Rancho Del Zocalo", "",
 			Properties.Resources.frontierland, false);
 
 		Location bigThunder = new Location("Big Thunder Mountain Railroad", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.bigthunder, false);
 
 		Location riverJunction = new Location("Rivers of America Approach", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.riversjunction, false);
 
 		Location newOrleans = new Location("New Orleans Shops", "",
 			Properties.Resources.neworleans, false);
 
 		Location hauntedMansion = new Location("Haunted Mansion", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.hauntedmansion, false);
 
 		Location splashMountain = new Location("Splash Mountain", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.splashmountain, false);
 
 		Location hungryBear = new Location("Hungry Bear Junction", "",
 			Properties.Resources.hungrybear, false);
 
-		//galaxys edge
+		//galaxys edge 6
 		Location geFirstOrderEnter = new Location("Galaxy's Edge, First Order Entrance", "",
 			Properties.Resources.noimage, false);
 
@@ -231,10 +231,10 @@ namespace laura_bday_2020
 			//note: will crash if stack empties. don't let it?
 			if(locationHistory.Peek() != gatesLoc) //if not the gates to go back to say no? not sure if good
 			{
-				buttonBack.Image = Properties.Resources.sym_no;
+				buttonBack.Image = Properties.Resources.downarrow;
 			} else
 			{
-				buttonBack.Image = Properties.Resources.downarrow;
+				buttonBack.Image = Properties.Resources.sym_no;
 			}
 
 
