@@ -201,5 +201,20 @@
   <ItemGroup>
     <None Include="resources\tikiroom.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\bazaar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\firstorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\hungrybearentrance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\rise.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smugglersrun.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

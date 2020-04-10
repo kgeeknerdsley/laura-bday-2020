@@ -40,8 +40,15 @@
 			this.descriptionLabelFixed = new System.Windows.Forms.Label();
 			this.nameLabel = new System.Windows.Forms.Label();
 			this.locationLabelFixed = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
+			this.objective1Label = new System.Windows.Forms.Label();
+			this.objective2Label = new System.Windows.Forms.Label();
+			this.objective3Label = new System.Windows.Forms.Label();
+			this.objective4Label = new System.Windows.Forms.Label();
+			this.tutorialLabel = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.parkImageBox)).BeginInit();
 			this.panel1.SuspendLayout();
+			this.objectivePanel.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -114,6 +121,12 @@
 			// 
 			this.objectivePanel.BackgroundImage = global::laura_bday_2020.Properties.Resources.control_background_green;
 			this.objectivePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.objectivePanel.Controls.Add(this.tutorialLabel);
+			this.objectivePanel.Controls.Add(this.objective4Label);
+			this.objectivePanel.Controls.Add(this.objective3Label);
+			this.objectivePanel.Controls.Add(this.objective2Label);
+			this.objectivePanel.Controls.Add(this.objective1Label);
+			this.objectivePanel.Controls.Add(this.button1);
 			this.objectivePanel.Location = new System.Drawing.Point(13, 450);
 			this.objectivePanel.Name = "objectivePanel";
 			this.objectivePanel.Size = new System.Drawing.Size(300, 250);
@@ -178,6 +191,74 @@
 			this.locationLabelFixed.TabIndex = 0;
 			this.locationLabelFixed.Text = "Location:";
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(16, 195);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(265, 31);
+			this.button1.TabIndex = 0;
+			this.button1.Text = "Unlock Secret";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// objective1Label
+			// 
+			this.objective1Label.AutoSize = true;
+			this.objective1Label.BackColor = System.Drawing.Color.Transparent;
+			this.objective1Label.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.objective1Label.Location = new System.Drawing.Point(13, 55);
+			this.objective1Label.Name = "objective1Label";
+			this.objective1Label.Size = new System.Drawing.Size(166, 18);
+			this.objective1Label.TabIndex = 1;
+			this.objective1Label.Text = "Splash Mtn:";
+			// 
+			// objective2Label
+			// 
+			this.objective2Label.AutoSize = true;
+			this.objective2Label.BackColor = System.Drawing.Color.Transparent;
+			this.objective2Label.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.objective2Label.Location = new System.Drawing.Point(13, 89);
+			this.objective2Label.Name = "objective2Label";
+			this.objective2Label.Size = new System.Drawing.Size(227, 18);
+			this.objective2Label.TabIndex = 2;
+			this.objective2Label.Text = "Smuggler\'s Run: ";
+			// 
+			// objective3Label
+			// 
+			this.objective3Label.AutoSize = true;
+			this.objective3Label.BackColor = System.Drawing.Color.Transparent;
+			this.objective3Label.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.objective3Label.Location = new System.Drawing.Point(13, 121);
+			this.objective3Label.Name = "objective3Label";
+			this.objective3Label.Size = new System.Drawing.Size(161, 18);
+			this.objective3Label.TabIndex = 3;
+			this.objective3Label.Text = "Tiki Room: ";
+			// 
+			// objective4Label
+			// 
+			this.objective4Label.AutoSize = true;
+			this.objective4Label.BackColor = System.Drawing.Color.Transparent;
+			this.objective4Label.Font = new System.Drawing.Font("Goudy Stout", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.objective4Label.Location = new System.Drawing.Point(13, 155);
+			this.objective4Label.Name = "objective4Label";
+			this.objective4Label.Size = new System.Drawing.Size(204, 18);
+			this.objective4Label.TabIndex = 4;
+			this.objective4Label.Text = "Roger Rabbit: ";
+			// 
+			// tutorialLabel
+			// 
+			this.tutorialLabel.AutoSize = true;
+			this.tutorialLabel.BackColor = System.Drawing.Color.Transparent;
+			this.tutorialLabel.CausesValidation = false;
+			this.tutorialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tutorialLabel.Location = new System.Drawing.Point(26, 13);
+			this.tutorialLabel.Name = "tutorialLabel";
+			this.tutorialLabel.Size = new System.Drawing.Size(225, 26);
+			this.tutorialLabel.TabIndex = 5;
+			this.tutorialLabel.Text = "Click the buttons on right to move! Find all four\r\nlocations to unlock the secret" +
+    "!";
+			this.tutorialLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.tutorialLabel.Click += new System.EventHandler(this.tutorialLabel_Click);
+			// 
 			// mainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,6 +273,8 @@
 			this.Text = "Laura\'s Disney Tour";
 			((System.ComponentModel.ISupportInitialize)(this.parkImageBox)).EndInit();
 			this.panel1.ResumeLayout(false);
+			this.objectivePanel.ResumeLayout(false);
+			this.objectivePanel.PerformLayout();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			this.ResumeLayout(false);
@@ -212,6 +295,12 @@
 		private System.Windows.Forms.Label nameLabel;
 		private System.Windows.Forms.Label descriptionLabelFixed;
 		private System.Windows.Forms.TextBox flavorLabel;
+		private System.Windows.Forms.Label tutorialLabel;
+		private System.Windows.Forms.Label objective4Label;
+		private System.Windows.Forms.Label objective3Label;
+		private System.Windows.Forms.Label objective2Label;
+		private System.Windows.Forms.Label objective1Label;
+		private System.Windows.Forms.Button button1;
 	}
 }
 

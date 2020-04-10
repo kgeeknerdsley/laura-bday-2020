@@ -148,6 +148,9 @@
   <data name="smallworld" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\smallworld.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="autopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\autopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="spacemountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\spacemountain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,6 +159,15 @@
   </data>
   <data name="tomorrowlandenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\tomorrowlandenter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="riversjunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\riversjunction.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splashmountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\splashmountain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bigthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bigthunder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="operahouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\operahouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +208,11 @@
   <data name="control_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\control_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tikiroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tikiroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rightarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\rightarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="autopia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\autopia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="neworleans" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\neworleans.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,34 +220,37 @@
   <data name="gates" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\gates.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hauntedmansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\hauntedmansion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="afsplit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\afsplit.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="noimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\noimage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mickeyhouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\mickeyhouse.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="entranceplaza" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\entranceplaza.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="afsplit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\afsplit.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bigthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\bigthunder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hauntedmansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\hauntedmansion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="indy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\indy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="riversjunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\riversjunction.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="entranceplaza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\entranceplaza.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="splashmountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\splashmountain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bazaar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bazaar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tikiroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\tikiroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="firstorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\firstorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hungrybearentrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\hungrybearentrance.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\rise.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smugglersrun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\smugglersrun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

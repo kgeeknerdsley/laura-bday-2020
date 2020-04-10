@@ -111,22 +111,22 @@ namespace laura_bday_2020
 
 		//galaxys edge 6
 		Location geFirstOrderEnter = new Location("Galaxy's Edge, First Order Entrance", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.firstorder, false);
 
 		Location geBazaarEnter = new Location("Galaxy's Edge, Bazaar Entrance", "",
 			Properties.Resources.gebazaar, false);
 
 		Location geRiseEntry = new Location("Galaxy's Edge, Rise Entrance", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.hungrybearentrance, false);
 
 		Location falcon = new Location("Smuggler's Run", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.smugglersrun, false);
 
 		Location bazaar = new Location("Batuu Bazaar", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.bazaar, false);
 
 		Location rise = new Location("Rise of the Resistance", "",
-			Properties.Resources.noimage, false);
+			Properties.Resources.rise, false);
 
 		private Location currentLocation;
 		public Stack<Location> locationHistory = new Stack<Location>();
@@ -185,14 +185,6 @@ namespace laura_bday_2020
 
 				updateGUI(nextLoc); //change gui to the new location
 				changeCurrentLocation(nextLoc); //current location is now the new location
-
-				foreach (Location i in locationHistory)
-				{
-					Console.WriteLine("---------");
-					Console.WriteLine(i.getName());
-					Console.WriteLine("---------");
-					Console.WriteLine();
-				}
 			}
 		}
 
@@ -276,14 +268,16 @@ namespace laura_bday_2020
 			matterhornWay.linkForward(smallWorld);
 			matterhornWay.linkRight(matterhorn);
 
-			matterhorn.linkLeft(matterhornWay);
-			matterhorn.linkRight(subLagoon);
-			subLagoon.linkLeft(matterhorn);
+			matterhorn.linkLeft(subLagoon);
+			matterhorn.linkRight(matterhornWay);
+
+			subLagoon.linkForward(matterhorn);
+			subLagoon.linkRight(innoventions);
 			
 			smallWorld.linkForward(rogerRabbit);
 			smallWorld.linkLeft(fantasyland);
 
-			rogerRabbit.linkForward(mickeyHouse);
+			rogerRabbit.linkLeft(mickeyHouse);
 
 			//adventureland/frontierland links
 			afSplit.linkLeft(tikiRoom);
@@ -298,17 +292,21 @@ namespace laura_bday_2020
 			riverJunction.linkForward(hauntedMansion);
 			riverJunction.linkRight(bigThunder);
 
-			frontierland.linkForward(bigThunder);
+			frontierland.linkLeft(bigThunder);
+
+			bigThunder.linkLeft(geBazaarEnter);
+			bigThunder.linkRight(frontierland);
 
 			newOrleans.linkForward(hauntedMansion);
 
-			hauntedMansion.linkForward(hungryBear);
+			hauntedMansion.linkRight(hungryBear);
 
 			hungryBear.linkLeft(splashMountain);
 			hungryBear.linkRight(geRiseEntry);
 
 			//galaxy's edge links
 			geRiseEntry.linkForward(rise);
+			geRiseEntry.linkLeft(hungryBear);
 			rise.linkRight(bazaar);
 
 			bazaar.linkLeft(rise);
@@ -319,9 +317,10 @@ namespace laura_bday_2020
 			geFirstOrderEnter.linkRight(fantasyland);
 			falcon.linkLeft(bazaar);
 
-			bigThunder.linkRight(geBazaarEnter);
+			
 			geBazaarEnter.linkForward(bazaar);
 			geBazaarEnter.linkRight(geFirstOrderEnter);
+			geBazaarEnter.linkLeft(bigThunder);
 
 
 
@@ -351,6 +350,11 @@ namespace laura_bday_2020
 				locationHistory.Push(gatesLoc);
 				MessageBox.Show("Can't go that way!");
 			}
+		}
+
+		private void tutorialLabel_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

@@ -93,6 +93,16 @@ namespace laura_bday_2020.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bazaar {
+            get {
+                object obj = ResourceManager.GetObject("bazaar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bigthunder {
             get {
                 object obj = ResourceManager.GetObject("bigthunder", resourceCulture);
@@ -183,6 +193,16 @@ namespace laura_bday_2020.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap firstorder {
+            get {
+                object obj = ResourceManager.GetObject("firstorder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frontierland {
             get {
                 object obj = ResourceManager.GetObject("frontierland", resourceCulture);
@@ -226,6 +246,16 @@ namespace laura_bday_2020.Properties {
         internal static System.Drawing.Bitmap hungrybear {
             get {
                 object obj = ResourceManager.GetObject("hungrybear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hungrybearentrance {
+            get {
+                object obj = ResourceManager.GetObject("hungrybearentrance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +363,16 @@ namespace laura_bday_2020.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rise {
+            get {
+                object obj = ResourceManager.GetObject("rise", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap riversjunction {
             get {
                 object obj = ResourceManager.GetObject("riversjunction", resourceCulture);
@@ -356,6 +396,16 @@ namespace laura_bday_2020.Properties {
         internal static System.Drawing.Bitmap smallworld {
             get {
                 object obj = ResourceManager.GetObject("smallworld", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smugglersrun {
+            get {
+                object obj = ResourceManager.GetObject("smugglersrun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
