@@ -22,32 +22,32 @@ namespace laura_bday_2020
 		Location cityHall = new Location("City Hall", "Get a button, maybe leave a compliment? If you're really lucky they'll give you a $120 gift card.",
 			Properties.Resources.cityhall, false);
 
-		Location operaHouse = new Location("Opera House", "",
+		Location operaHouse = new Location("Opera House", "Watch some Mr. Lincoln...and get really bored. Nice and air conditioned on a hot day, though.",
 			Properties.Resources.operahouse, false);
 
-		Location mainStreet = new Location("Main Street", "",
+		Location mainStreet = new Location("Main Street", "Can you see the castle from here? The new colors were a really good idea. Maybe grab a bag of gluten-free cookies while you're here.",
 			Properties.Resources.mainstreet, false);
 
-		Location circle = new Location("Walt Statue Hub", "",
+		Location circle = new Location("Walt Statue Hub", "Look out! You might be in someone's photo if you stand here too long. Anyways, which land do you want to go to first?",
 			Properties.Resources.waltstatue, false);
 
 		//TOMORROWLAND 6
-		Location tomorrowFront = new Location("Tomorrowland Entrance", "",
+		Location tomorrowFront = new Location("Tomorrowland Entrance", "Say goodbye to the french fry rocks! Make sure you don't bump into the Star Tours fastpass entrance.",
 			Properties.Resources.tomorrowlandenter, false);
 
-		Location tomorrowMid = new Location("Tomorrowland Mid", "",
+		Location tomorrowMid = new Location("Tomorrowland Mid", "Stay to the right! Unless you want some Toy Story merch. Then you're going to have to get creative on a busy day...",
 			Properties.Resources.tomorrowlandmid, false);
 
-		Location innoventions = new Location("Launch Bay", "",
+		Location innoventions = new Location("Launch Bay", "Go get a Chewie hug! Or look at it and miss the House of the Future. Those touchscreens were so cool...",
 			Properties.Resources.launchbay, false);
 
-		Location spaceMountain = new Location("Space Mountain", "",
+		Location spaceMountain = new Location("Space Mountain", "Hope you got your fastpass ready! Time for the best coaster in the park (objective opinion).",
 			Properties.Resources.spacemountain, false);
 
-		Location autopia = new Location("Autopia", "",
+		Location autopia = new Location("Autopia", "Ahh, the smell of gasoline on a summer's day. Yo soy Berd- no bumping.",
 			Properties.Resources.autopia, false);
 
-		Location subLagoon = new Location("Submarine Lagoon", "",
+		Location subLagoon = new Location("Submarine Lagoon", "Mine! Mine! Mine! The ride might not be all that great, but the submarines are pretty.",
 			Properties.Resources.sublagoon, false);
 
 		//FANTASYLAND/TOONTOWN 8 
@@ -228,8 +228,22 @@ namespace laura_bday_2020
 			{
 				buttonBack.Image = Properties.Resources.sym_no;
 			}
+		}
 
+		public void checkObjectives(Location currentLocation)
+		{
+			bool splash;
+			bool smuggler;
+			bool tiki;
+			bool roger;
 
+			if(currentLocation == splashMountain)
+			{
+
+			} else
+			{
+
+			}
 		}
 
 		public void linkLocations()
@@ -356,5 +370,7 @@ namespace laura_bday_2020
 		{
 
 		}
+
+		
 	}
 }
