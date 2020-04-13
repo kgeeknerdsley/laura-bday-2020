@@ -13,7 +13,7 @@ namespace laura_bday_2020
 	public partial class mainWindow : Form
 	{
 		//starting point, gates of the park 6
-		Location gatesLoc = new Location("Gates", "This is where the gates are wahoo",
+		Location gatesLoc = new Location("Gates", "You made it! Hopefully parking was pretty easy (it's very quick in a digital version, isn't it?). Let's get started!",
 			Properties.Resources.gates, false);
 
 		Location entrancePlaza = new Location("Entrance Plaza", "Take your first photo of the day here! Don't stand here if you want Rise passes.",
@@ -51,85 +51,90 @@ namespace laura_bday_2020
 			Properties.Resources.sublagoon, false);
 
 		//FANTASYLAND/TOONTOWN 8 
-		Location castle = new Location("Castle", "",
+		Location castle = new Location("Castle", "Dodge the Photopass employees! It's a pretty view but you can't be camera shy here.",
 			Properties.Resources.castle, false);
 
-		Location matterhornWay = new Location("Matterhorn Alleyway", "",
+		Location matterhornWay = new Location("Matterhorn Alleyway", "If you walk down here at just the right time it feels like YOU'RE the parade!",
 			Properties.Resources.noimage, false);
 
-		Location matterhorn = new Location("Matterhorn", "",
+		Location matterhorn = new Location("Matterhorn", "Buckle up and get ready for your spine to rearrange! Cover your ears when the yeti shows up. He's just too loud...",
 			Properties.Resources.matterhorn, false);
 
-		Location smallWorld = new Location("Small World", "",
+		Location smallWorld = new Location("Small World", "Time to sit down in an air conditioned boat for fifteen minutes. How many Disney characters can you spot?",
 			Properties.Resources.smallworld, false);
 
-		Location fantasyland = new Location("Fantasyland", "",
+		Location fantasyland = new Location("Fantasyland", "Surprisingly good variety of rides, but I think my favorite is Pinnochio...for obvious reasons...",
 			Properties.Resources.fantasyland, false);
 
-		Location caseyJr = new Location("Casey Jr.", "",
+		Location caseyJr = new Location("Casey Jr.", "I'm still shocked adults can fit in this ride. The back is a lot of fun though.",
 			Properties.Resources.caseyjr, false);
 
-		Location rogerRabbit = new Location("Roger Rabbit's Car Toon Spin", "",
+		Location rogerRabbit = new Location("Roger Rabbit's Car Toon Spin", "Probably the best themed line in the whole park. The ride is a bit terrifying, though.",
 			Properties.Resources.rogerrabbit, false);
 
-		Location mickeyHouse = new Location("Mickey's House", "",
+		Location mickeyHouse = new Location("Mickey's House", "How deep does his underground movie barn go?? Mickey has some explaining to do.",
 			Properties.Resources.mickeyhouse, false);
 
 		//FRONTIER/ADVENTURE 10
-		Location afSplit = new Location("Adventure/Frontier Split", "",
+		Location afSplit = new Location("Adventure/Frontier Split", "Which way to go? Depends: do you want a Dole Whip or Mexican food?",
 			Properties.Resources.afsplit, false);
 
-		Location tikiRoom = new Location("Tiki Room", "",
+		Location tikiRoom = new Location("Tiki Room", "The best place to kick back and snuggle for a while. Remember to take your enchanted trash with you on the way out.",
 			Properties.Resources.tikiroom, false);
 
-		Location adventurelandMid = new Location("Adventureland Mid", "",
+		Location adventurelandMid = new Location("Adventureland Mid", "Remember when this used to be full of strollers? What a time that was.",
 			Properties.Resources.adventureland, false);
 
-		Location indy = new Location("Indiana Jones", "",
+		Location indy = new Location("Indiana Jones", "Such a cool ride, and somehow even more fun if it breaks down!",
 			Properties.Resources.indy, false);
 
-		Location frontierland = new Location("Frontierland and Rancho Del Zocalo", "",
+		Location frontierland = new Location("Rancho Del Zocalo", "Best gluten free dinner in the park! And I'm not just saying that so I can get a huge burrito.",
 			Properties.Resources.frontierland, false);
 
-		Location bigThunder = new Location("Big Thunder Mountain Railroad", "",
+		Location bigThunder = new Location("Big Thunder Mountain Railroad", "It's almost criminal to ride this without a Fastpass. Watch the goat on your way down for maximum excitement!",
 			Properties.Resources.bigthunder, false);
 
-		Location riverJunction = new Location("Rivers of America Approach", "",
+		Location riverJunction = new Location("Rivers of America Approach", "Good luck getting through here on a busy day. Watch out for the Pirates line.",
 			Properties.Resources.riversjunction, false);
 
-		Location newOrleans = new Location("New Orleans Shops", "",
+		Location newOrleans = new Location("New Orleans Shops", "Who buys all the expensive gem statues and perfume? I've never understood that, but hey, it's fun to look at.",
 			Properties.Resources.neworleans, false);
 
-		Location hauntedMansion = new Location("Haunted Mansion", "",
+		Location hauntedMansion = new Location("Haunted Mansion", "999 haunts...if you stick around long enough you might become the 1000th.",
 			Properties.Resources.hauntedmansion, false);
 
-		Location splashMountain = new Location("Splash Mountain", "",
+		Location splashMountain = new Location("Splash Mountain", "Bring an extra pair of socks! And don't trust your girlfriend when she says row 4 will be safe. It's not.",
 			Properties.Resources.splashmountain, false);
 
-		Location hungryBear = new Location("Hungry Bear Junction", "",
+		Location hungryBear = new Location("Hungry Bear Junction", "How's the line looking for Pooh? It's either that or Star Wars Land from here.",
 			Properties.Resources.hungrybear, false);
 
 		//galaxys edge 6
-		Location geFirstOrderEnter = new Location("Galaxy's Edge, First Order Entrance", "",
+		Location geFirstOrderEnter = new Location("Galaxy's Edge, First Order Entrance", "If it's hot, why not grab a blue milk right here? It's definitely a choice you won't regret after a few minutes.",
 			Properties.Resources.firstorder, false);
 
-		Location geBazaarEnter = new Location("Galaxy's Edge, Bazaar Entrance", "",
+		Location geBazaarEnter = new Location("Galaxy's Edge, Bazaar Entrance", "Careful of rogue droids! Watch your step around the Droid Depot.",
 			Properties.Resources.gebazaar, false);
 
-		Location geRiseEntry = new Location("Galaxy's Edge, Rise Entrance", "",
+		Location geRiseEntry = new Location("Galaxy's Edge, Rise Entrance", "Get walkin', there's a long way to go before the bazaar. You'll probably see Chewie this way, though.",
 			Properties.Resources.hungrybearentrance, false);
 
-		Location falcon = new Location("Smuggler's Run", "",
+		Location falcon = new Location("Smuggler's Run", "Best enjoyed with a party of 6. Remember to ask for pilot!",
 			Properties.Resources.smugglersrun, false);
 
-		Location bazaar = new Location("Batuu Bazaar", "",
+		Location bazaar = new Location("Batuu Bazaar", "Quick! Check and see if any new merchandise appeared since last time...or is that just me?",
 			Properties.Resources.bazaar, false);
 
-		Location rise = new Location("Rise of the Resistance", "",
+		Location rise = new Location("Rise of the Resistance", "Got your boarding pass ready? Or are you here for the surprisingly good cheese doodles?",
 			Properties.Resources.rise, false);
 
 		private Location currentLocation;
 		public Stack<Location> locationHistory = new Stack<Location>();
+
+		bool splash_obj1 = false;
+		bool smuggler_obj2 = false;
+		bool tiki_obj3 = false;
+		bool roger_obj4 = false;
 
 		public mainWindow()
 		{
@@ -183,6 +188,7 @@ namespace laura_bday_2020
 					locationHistory.Push(getCurrentLocation()); //save where we just were
 				}
 
+				checkObjectives(currentLoc); //check current location against list of objectives
 				updateGUI(nextLoc); //change gui to the new location
 				changeCurrentLocation(nextLoc); //current location is now the new location
 			}
@@ -190,10 +196,12 @@ namespace laura_bday_2020
 
 		public void updateGUI(Location location)
 		{
+			//update photo and text
 			nameLabel.Text = location.getName();
 			flavorLabel.Text = location.getFlavorText();
 			parkImageBox.Image = location.getImage();
 
+			//update button images
 			if(location.getLeftLocation() == null)
 			{
 				buttonLeft.Image = Properties.Resources.sym_no;
@@ -228,21 +236,45 @@ namespace laura_bday_2020
 			{
 				buttonBack.Image = Properties.Resources.sym_no;
 			}
+
+			if(splash_obj1)
+			{
+				obj1Image.Image = Properties.Resources.sym_check;
+			}
+
+			if(smuggler_obj2)
+			{
+				obj2Image.Image = Properties.Resources.sym_check;
+			}
+
+			if(tiki_obj3)
+			{
+				obj3Image.Image = Properties.Resources.sym_check;
+			}
+
+			if(roger_obj4)
+			{
+				obj4Image.Image = Properties.Resources.sym_check;
+			}
+
+
 		}
 
+		//sets the booleans to true if visited once
 		public void checkObjectives(Location currentLocation)
 		{
-			bool splash;
-			bool smuggler;
-			bool tiki;
-			bool roger;
-
 			if(currentLocation == splashMountain)
 			{
-
-			} else
+				splash_obj1 = true;
+			} else if(currentLocation == falcon)
 			{
-
+				smuggler_obj2 = true;
+			} else if(currentLocation == tikiRoom)
+			{
+				tiki_obj3 = true;
+			} else if(currentLocation == rogerRabbit)
+			{
+				roger_obj4 = true;
 			}
 		}
 
@@ -298,6 +330,7 @@ namespace laura_bday_2020
 			afSplit.linkRight(frontierland);
 
 			tikiRoom.linkRight(adventurelandMid);
+			tikiRoom.linkLeft(afSplit);
 
 			adventurelandMid.linkLeft(indy);
 			adventurelandMid.linkForward(riverJunction);
@@ -307,6 +340,7 @@ namespace laura_bday_2020
 			riverJunction.linkRight(bigThunder);
 
 			frontierland.linkLeft(bigThunder);
+			frontierland.linkRight(afSplit);
 
 			bigThunder.linkLeft(geBazaarEnter);
 			bigThunder.linkRight(frontierland);
@@ -335,9 +369,6 @@ namespace laura_bday_2020
 			geBazaarEnter.linkForward(bazaar);
 			geBazaarEnter.linkRight(geFirstOrderEnter);
 			geBazaarEnter.linkLeft(bigThunder);
-
-
-
 		}
 
 		private void buttonForward_Click(object sender, EventArgs e)
@@ -368,9 +399,23 @@ namespace laura_bday_2020
 
 		private void tutorialLabel_Click(object sender, EventArgs e)
 		{
-
+			//how do i kill this
 		}
 
-		
+		private void secretButton_Click(object sender, EventArgs e)
+		{
+			//String pdfpath = Path.
+
+			if(splash_obj1 && smuggler_obj2 && tiki_obj3 && roger_obj4)
+			{
+				MessageBox.Show("You found all four places! Opening secret...");
+				//get file path of secret
+				//use System.Diagnostics.Process.Start(path of pdf) to open a pdf viewer from machine
+				
+			} else
+			{
+				MessageBox.Show("Keep looking! You haven't found everything yet...");
+			}
+		}
 	}
 }
