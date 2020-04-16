@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace laura_bday_2020
 {
@@ -55,7 +56,7 @@ namespace laura_bday_2020
 			Properties.Resources.castle, false);
 
 		Location matterhornWay = new Location("Matterhorn Alleyway", "If you walk down here at just the right time it feels like YOU'RE the parade!",
-			Properties.Resources.noimage, false);
+			Properties.Resources.matterhornalley, false);
 
 		Location matterhorn = new Location("Matterhorn", "Buckle up and get ready for your spine to rearrange! Cover your ears when the yeti shows up. He's just too loud...",
 			Properties.Resources.matterhorn, false);
@@ -404,17 +405,19 @@ namespace laura_bday_2020
 
 		private void secretButton_Click(object sender, EventArgs e)
 		{
-			//String pdfpath = Path.
+			String pdfpath = Directory.GetCurrentDirectory() + "\\bin\\reward.pdf";
 
 			if(splash_obj1 && smuggler_obj2 && tiki_obj3 && roger_obj4)
 			{
-				MessageBox.Show("You found all four places! Opening secret...");
-				//get file path of secret
+				MessageBox.Show("You found all four places! Hit OK to open secret...");
 				//use System.Diagnostics.Process.Start(path of pdf) to open a pdf viewer from machine
+				System.Diagnostics.Process.Start(pdfpath);
 				
 			} else
 			{
 				MessageBox.Show("Keep looking! You haven't found everything yet...");
+				//MessageBox.Show(pdfpath);
+				//System.Diagnostics.Process.Start(pdfpath);
 			}
 		}
 	}

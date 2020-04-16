@@ -313,9 +313,29 @@ namespace laura_bday_2020.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap matterhornalley {
+            get {
+                object obj = ResourceManager.GetObject("matterhornalley", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mickeyhouse {
             get {
                 object obj = ResourceManager.GetObject("mickeyhouse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mickeyicon {
+            get {
+                object obj = ResourceManager.GetObject("mickeyicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

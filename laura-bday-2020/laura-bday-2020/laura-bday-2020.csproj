@@ -219,5 +219,11 @@
   <ItemGroup>
     <None Include="resources\sym_check.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\mickeyicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\matterhornalley.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
